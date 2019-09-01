@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1566422301584' stop='1566422317799'>
+    <name>Amazon:</name>
+    <title>Amazon:</title>
+    <test-cases>
+        <test-case start='1566422304397' status='passed' stop='1566422317758'>
+            <name>Validar pesquisa na Amazon @CT001</name>
+            <title>Validar pesquisa na Amazon @CT001</title>
+            <labels>
+                <label name='tag' value='@CT001'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1566422311664' status='passed' stop='1566422316332'>
+                    <name>Object: pesquisar </name>
+                    <title>Object: pesquisar </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1566422311664' status='passed' stop='1566422312323'>
+                            <name>Eu preencho o campo "//*[@id="twotabsearchtextbox"]", "Iphone"</name>
+                            <title>Eu preencho o campo "//*[@id="twotabsearchtextbox"]", "Iphone"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1566422312323' status='passed' stop='1566422316332'>
+                            <name>Eu clico "#nav-search > form > div.nav-right > div > input"</name>
+                            <title>Eu clico "#nav-search > form > div.nav-right > div > input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1566422316332' status='passed' stop='1566422317758'>
+                    <name>Eu vejo "Apple iPhone XR"</name>
+                    <title>Eu vejo "Apple iPhone XR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

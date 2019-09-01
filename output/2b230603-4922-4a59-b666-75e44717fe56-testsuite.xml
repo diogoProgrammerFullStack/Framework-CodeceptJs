@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1566422674253' stop='1566422706504'>
+    <name>Amazon:</name>
+    <title>Amazon:</title>
+    <test-cases>
+        <test-case start='1566422677033' status='passed' stop='1566422689578'>
+            <name>Validar pesquisa na Amazon @CT001</name>
+            <title>Validar pesquisa na Amazon @CT001</title>
+            <labels>
+                <label name='tag' value='@CT001'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1566422683560' status='passed' stop='1566422688166'>
+                    <name>Object: pesquisar </name>
+                    <title>Object: pesquisar </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1566422683560' status='passed' stop='1566422684183'>
+                            <name>Eu preencho o campo "//*[@id="twotabsearchtextbox"]", "Iphone"</name>
+                            <title>Eu preencho o campo "//*[@id="twotabsearchtextbox"]", "Iphone"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1566422684183' status='passed' stop='1566422688166'>
+                            <name>Eu clico "#nav-search > form > div.nav-right > div > input"</name>
+                            <title>Eu clico "#nav-search > form > div.nav-right > div > input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1566422688166' status='passed' stop='1566422689578'>
+                    <name>Eu vejo "Apple iPhone XR"</name>
+                    <title>Eu vejo "Apple iPhone XR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1566422689621' status='failed' stop='1566422705851'>
+            <name>Validar pesquisa Amazon com validação negativa @CT002</name>
+            <title>Validar pesquisa Amazon com validação negativa @CT002</title>
+            <labels>
+                <label name='tag' value='@CT002'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1566422696544' status='passed' stop='1566422700810'>
+                    <name>Object: pesquisar </name>
+                    <title>Object: pesquisar </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1566422696544' status='passed' stop='1566422697165'>
+                            <name>Eu preencho o campo "//*[@id="twotabsearchtextbox"]", "Iphone"</name>
+                            <title>Eu preencho o campo "//*[@id="twotabsearchtextbox"]", "Iphone"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1566422697165' status='passed' stop='1566422700810'>
+                            <name>Eu clico "#nav-search > form > div.nav-right > div > input"</name>
+                            <title>Eu clico "#nav-search > form > div.nav-right > div > input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1566422700810' status='failed' stop='1566422705850'>
+                    <name>Eu vejo elemento "blablabla"</name>
+                    <title>Eu vejo elemento "blablabla"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='7140b137-45c5-479d-b3d8-d3a0aa2dc520-attachment.png' type='image/png' size='179235'/>
+            </attachments>
+            <failure>
+                <message>Element "blablabla" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Element "blablabla" was not found by text|CSS|XPath
+                    at new ElementNotFound (C:\Users\diogo\Desktop\framework-web-node\node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:14:11)
+                    at assertElementExists (C:\Users\diogo\Desktop\framework-web-node\node_modules\codeceptjs\lib\helper\WebDriver.js:2312:11)
+                    at WebDriver.seeElement (C:\Users\diogo\Desktop\framework-web-node\node_modules\codeceptjs\lib\helper\WebDriver.js:1083:5)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
